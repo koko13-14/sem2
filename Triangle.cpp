@@ -21,7 +21,13 @@ bool Triangle::isTriangle() const {
 	double bc = B.distance(C);
 	double ca = C.distance(A);
 
-	return ab + bc > ca && ab + ca > bc && bc + ca > ab;
+	bool TriangleInequality = (ab + bc > ca) && (ab + ca > bc) && (bc + ca > ab);
+
+	bool NotOneStraightLine = (C.getX() - A.getX()) / (B.getX() - A.getX()) != (C.getY() - A.getY()) / (B.getY() - A.getY());
+
+	bool NePoparnoRavnu = (A != B) && (A != C) && (B != C);
+
+	return TriangleInequality && NotOneStraightLine && NePoparnoRavnu;
 }
 
 double Triangle::getPerimetr() const {
