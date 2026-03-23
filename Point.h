@@ -55,4 +55,16 @@ public:
 	* @param p - точка для ввода
 	*/
 	friend std::istream& operator>>(std::istream& is, Point& p);
+
+	/*
+	* @brief оператор ==
+	* @return 1 если равно
+	*/
+	bool operator == (const Point& other) const;
+
+	/*
+	* @brief оператор !=
+	* @return 1 если не равно
+	*/
+	bool operator != (const Point& other) const;
 };
