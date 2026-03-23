@@ -5,6 +5,10 @@
 
 using namespace std;
 
+/*
+* @brief точка входа в программу
+* return 0, если программа выполнена правильно
+*/
 int main(void) {
 
 	setlocale(LC_ALL, "Russian");
