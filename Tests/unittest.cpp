@@ -1,4 +1,4 @@
-#include "../Task2/Triangle.h"
+#include "../Task2/Triangle.h" 
 #include "../Task2/Point.h"
 #include <CppUnitTest.h>
 #include <sstream>
