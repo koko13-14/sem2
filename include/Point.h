@@ -24,7 +24,7 @@ namespace geometry {
         * @param x - координата точки по оси OX
         * @param y - координата точки по оси OY
         */
-        Point(double x = 0.0, double y = 0.0);
+        Point(const double x = 0.0, const double y = 0.0);
 
         /**
         * @brief получение координаты x
