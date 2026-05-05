@@ -54,7 +54,7 @@ namespace geometry {
         * @param x3 - координата по оси x вершины 3
         * @param y3 - координата по оси y вершины 3
         */
-        Triangle(double x1, double y1, double x2, double y2, double x3, double y3);
+        Triangle(const double x1, const double y1, const double x2, const double y2, const double x3, const double y3);
 
         /**
         * @brief сериализация в строку
