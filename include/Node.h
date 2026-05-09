@@ -34,7 +34,7 @@ public:
     * @param next Указатель на следующий узел
     * @param previous Указатель на предыдущий узел
     */
-    explicit Node(int data, Node* next = nullptr, Node* previous = nullptr);
+    explicit Node(const int data, const Node* next = nullptr, const Node* previous = nullptr);
 
     /**
     * @brief Деструктор
