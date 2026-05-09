@@ -28,7 +28,7 @@ private:
     * @param index Индекс элемента
     * @return Указатель на узел или nullptr при неверном индексе
     */
-    Node* getNodeAt(size_t index) const;
+    Node* getNodeAt(const size_t index) const;
 
     /**
     * @brief Очистка всей памяти вектора
@@ -53,7 +53,7 @@ public:
     * @brief Конструктор со списком инициализации
     * @param initList Список инициализации
     */
-    Vector(std::initializer_list<int> initList);
+    Vector(const std::initializer_list initList);
 
     /**
     * @brief Конструктор копирования
@@ -97,7 +97,7 @@ public:
     * @param index Индекс для вставки
     * @param value Вставляемое значение
     */
-    void insertAt(size_t index, int value);
+    void insertAt(const size_t index, const int value);
 
     /**
     * @brief Удаление последнего элемента
@@ -108,14 +108,14 @@ public:
     * @brief Удаление элемента по индексу
     * @param index Индекс удаляемого элемента
     */
-    void removeAt(size_t index);
+    void removeAt(const size_t index);
 
     /**
     * @brief Поиск первого вхождения элемента
     * @param value Искомое значение
     * @return Индекс элемента или -1 при отсутствии
     */
-    int find(int value) const;
+    int find(const int value) const;
 
     /**
     * @brief Проверка на пустоту
@@ -134,28 +134,28 @@ public:
     * @param index Индекс элемента
     * @return Константная ссылка на значение
     */
-    int operator[](size_t index) const;
+    int operator[](const size_t index) const;
 
     /**
     * @brief Оператор доступа по индексу
     * @param index Индекс элемента
     * @return Ссылка на значение
     */
-    int& operator[](size_t index);
+    int& operator[](const size_t index);
 
     /**
     * @brief Оператор сдвига влево (заполнение нулями)
     * @param positions Количество позиций сдвига
     * @return Ссылка на текущий вектор
     */
-    Vector& operator<<=(size_t positions);
+    Vector& operator<<=(const size_t positions);
 
     /**
     * @brief Оператор сдвига вправо (заполнение нулями)
     * @param positions Количество позиций сдвига
     * @return Ссылка на текущий вектор
     */
-    Vector& operator>>=(size_t positions);
+    Vector& operator>>=(const size_t positions);
 
     /**
     * @brief Преобразование вектора в строку
