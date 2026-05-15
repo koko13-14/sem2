@@ -23,7 +23,7 @@ namespace geometry {
         }
     }
 
-    Triangle::Triangle(double x1, double y1, double x2, double y2, double x3, double y3)
+    Triangle::Triangle(const double x1, const double y1, const double x2, const double y2, const double x3, const double y3)
     {
         vertices.push_back(Point(x1, y1));
         vertices.push_back(Point(x2, y2));
